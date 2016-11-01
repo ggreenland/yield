@@ -6,6 +6,10 @@ import com.ggreenland.yield.service.BondServiceException;
 import java.util.ListIterator;
 
 
+/**
+ * Calculate the yield spread on a bond agasint the linearly interpolated
+ * bond curve
+ */
 public class LinearInterpolatedSpread implements SpreadCalculator {
 
     private final BondDataService bondData;

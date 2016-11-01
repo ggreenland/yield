@@ -23,7 +23,7 @@ public class Console {
     int mode = 0;
     @Parameter(description = "Input path", required = true)
     private List<String> filepaths = new ArrayList<String>();
-    @Parameter(names = "--help", help = true)
+    @Parameter(names = {"--help", "-h"}, help = true)
     private boolean help;
 
 
@@ -55,10 +55,10 @@ public class Console {
         List<Bond> corpBonds = service.find(Bond.Type.CORP);
 
         for (Bond b : corpBonds){
-            System.out.println("Bond - " + b);
+            System.out.println(b.name);
             try {
                 double spread = calculator.calculate(b);
-                System.out.println("spread = " + Double.toString(spread));
+                System.out.println("spread = " + String.format("%.2f",spread));
             } catch (BondServiceException e) {
                 System.out.println("Cannot calculate spread for bond " );
             }

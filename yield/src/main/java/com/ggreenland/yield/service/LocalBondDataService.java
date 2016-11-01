@@ -54,34 +54,6 @@ public class LocalBondDataService implements BondDataService {
         return Collections.unmodifiableList(getListByType(type));
     }
 
-//    private List<Bond> buildBondsInContext(List<Bond> bonds, int context, int closest) throws BondServiceException {
-//
-//        List<Bond> foundBonds = new ArrayList<Bond>();
-//        foundBonds.add(bonds.get(closest));
-//        int found = 1;
-//        int nextAbove = closest + 1;
-//        int nextBelow = closest - 1;
-//        while (foundBonds.size() < context){
-//
-//        }
-//        return foundBonds;
-//    }
-//
-//
-//
-//    @Override
-//    public List<Bond> findInContext(Bond.Type type, double term, int context) throws BondServiceException {
-//
-//        if (term < 0)
-//            throw new BondServiceException("Term cannot be negative");
-//        if (context < 0)
-//            throw new BondServiceException("Context cannot be negative");
-//
-//        List<Bond> bonds = getListByType(type);
-//        int closestIndex = BondSearch.findClosetBondIndex(bonds, term);
-//        return Collections.unmodifiableList(buildBondsInContext(bonds, context, closestIndex));
-//    }
-
     @Override
     public ListIterator<Bond> find(Bond.Type type, double term) throws BondServiceException {
         return new BondIterator(getListByType(type),term);

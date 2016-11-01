@@ -1,0 +1,7 @@
+[
+{"name":"C1","type":"CORP","term":10.3,"yield":5.3},
+{"name":"C2","type":"CORP","term":15.2,"yield":8.3},
+{"name":"G1","type":"GOV","term":9.4,"yield":3.7},
+{"name":"G2","type":"GOV","term":12,"yield":4.8},
+{"name":"G3","type":"GOV","term":16.3,"yield":5.5}
+]

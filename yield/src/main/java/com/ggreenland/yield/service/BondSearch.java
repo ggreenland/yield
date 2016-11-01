@@ -8,8 +8,10 @@ public class BondSearch {
 
     /**
      * Find index of closest bond in a sorted bond list
-     * Assumes bonds are sorted in increasing term length
-     * @param bonds List of bonds to search
+     * Assumes bonds are sorted in increasing term length so that
+     * a binary search can be performed on the list
+     *
+     * @param bonds Sorted List of bonds to search
      * @param term Term to compare bonds to
      * @return Index of closest bond
      */

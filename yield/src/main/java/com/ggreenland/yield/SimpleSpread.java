@@ -6,6 +6,9 @@ import com.ggreenland.yield.service.BondServiceException;
 import java.util.ListIterator;
 
 
+/**
+ * Calculate the yield spread of a bond against the nearest government bond
+ */
 public class SimpleSpread implements SpreadCalculator {
 
     private final BondDataService bondData;
