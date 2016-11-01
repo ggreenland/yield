@@ -60,4 +60,4 @@ Given the time constraints and limited requirements there were several items tha
 	- Implement remaining methods causing compile warnings due to incomplete ListIterator.
 	- The BondIterator and LinearInterpolatedSpread implementation seems a bit akward and forced.  I would refactor this to have the BondDataService expose an extra API to return a pair (for linear interpolation) or if the requirements were extended to other interpolation methods then modify the interface to return an ordered "context" of the surrouding N bonds.
 - The data service is missing a lot of requirements in order to design an optimal implementation so this would need revisiting.
-- 
+- Validation on input JSON
